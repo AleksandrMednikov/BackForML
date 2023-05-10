@@ -1,0 +1,61 @@
+.title{
+	background: rgb(204, 78, 92);
+	text-align: center;
+}
+
+.h1text{
+	color: rgb(255, 255, 255);
+	position: relative;
+	bottom:2px;
+}
+
+.buttons{
+	position: relative;
+	top:20px;
+}
+
+.answer{
+	text-align: center;
+}
+
+.desc{
+	text-align: center;
+}
+
+.desc_block{
+	position: relative;
+	top:360px;
+}
+
+
+.max{
+	position: relative;
+	width: 145px;
+	left:530px;
+	background: rgb(204, 0, 44);
+	text-align: center;
+}
+
+.high{
+	position: relative;
+	width: 145px;
+	left:530px;
+	background: rgb(240, 2, 0);
+	text-align: center;
+}
+
+.average{
+	position: relative;
+	width: 145px;
+	left:530px;
+	background: rgb(255, 255, 56);
+	text-align: center;
+}
+
+.low{
+	position: relative;
+	width: 145px;
+	left:530px;
+	background: rgb(78, 255, 92);
+	text-align: center;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'mycss.css' %}">
+    <meta charset="UTF-8">
+    <title>{{model_name}}</title>
+</head>
+<body>
+    <div class=title>
+		<h1 class=h1text>{{model_name}}<h1>
+	</div class=title>
+    <div class=desc_block>
+        <p class=desc>{{desc}}</p>
+        <div class={{class}}>
+            <b class=answer>{{result}}</b>
+        </div>
+    </div>
+</body>
+</html>

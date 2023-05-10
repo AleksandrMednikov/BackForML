@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+	<title>{{model_name}}</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'mycss.css' %}">
+</head>
+<body>
+	<div class=title>
+		<h1 class=h1text>{{model_name}}<h1>
+	</div class=title>
+		<form action=answer/ method=get>
+			{% for param in params %}
+			<div class=quest>
+				<p class=quest_desc>{{param.desc}}</p>
+				{% if param.bool %}
+					<input class=radio_input value=0 name={{param.value}} type=radio>{{param.desc_bool_0}}</input>
+					<input class=radio_input value=1 name={{param.value}} type=radio>{{param.desc_bool_1}}</input>
+				{% else %}
+					<input class=int_input name={{param.name}} type=tel></input>
+				{% endif %}
+			</div>
+			{% endfor %}
+			<div class=buttons>
+				<button type=submit>Результат</button>
+				<button type=reset>Сбросить</button>
+			</div>
+		</form>
+</body>
