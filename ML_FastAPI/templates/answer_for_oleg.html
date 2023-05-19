@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+ 
+    <style>
+ 
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            background-color: #00db6a;
+            font-family: Verdana;
+            text-align: center;
+        }
+ 
+        /* Styling the Form (Color, Padding, Shadow) */
+        img_left {
+            background-color: #fff;
+            left: 300px;
+            max-width: 500px;
+            max-height: 500px;
+        }
+
+        img_right {
+            background-color: #fff;
+            max-width: 500px;
+            max-height: 500px;
+            right: 300px;
+        }
+
+    </style>
+</head>
+  
+<body>
+    <h1>Все Успешно, посмотрите результаты в фаиле results!</h1>
+    <h2>{{results0}}</h2>
+    <h2>{{results1}}</h2>
+    <div class="img_left">
+        <img src="data:image/jpeg;base64,{{img_left}}" />
+    </div>
+    <div class="img_right">
+        <img src="data:image/jpeg;base64,{{img_right}}" />
+    </div>
+</body>
+</html>
